@@ -1,7 +1,9 @@
+const licenseBadgeLinks = require("./license-badges-for-README");
 function generateMarkdown(answers) {
+  answers.licenseBadge = licenseBadgeLinks[answers.license];
   return `
-<h1 align="center">${answers.title}</h1>
- ${answers.description}
+${answers.title}
+${answers.licenseBadge}
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
@@ -11,8 +13,12 @@ function generateMarkdown(answers) {
 - [Tests](#tests)
 - [Questions](#questions)
 ## Description
+${answers.description}
 ## Installation
+To get dependencies, run:
+\'
 ${answers.installation}
+\'
 ## Usage
 ${answers.usage}
 ## License
@@ -21,10 +27,12 @@ This application is covered by the ${answers.license} license.
 ## How to contribute
 ${answers.contribute}
 ## Tests
+\'
 ${answers.tests}
+\'
 GitHub: ${answers.username}
 Email: ${answers.email}
-Copyright 2020 &copy;`;
+Copyright 2020`;
 }
 
 module.exports = generateMarkdown;

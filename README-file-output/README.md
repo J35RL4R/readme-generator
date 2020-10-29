@@ -30,5 +30,3 @@ npm test
 GitHub: J35RL4R
 Email: larsenj732@gmail.com
 Copyright 2020
-
-(made with this application!!)

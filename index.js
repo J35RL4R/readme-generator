@@ -66,7 +66,7 @@ const init = async () => {
         console.log("Readme generator running. \n Please answer the following:")
         const answers = await promptUser();
         const fileContent = generateMd(answers);
-        await writeToFile("./output/README.md", fileContent);
+        await writeToFile("./README-file-output/README.md", fileContent);
         console.log("README.md created.");
     } 
     catch (err) {
