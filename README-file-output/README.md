@@ -10,23 +10,19 @@ README Generator
 - [Tests](#tests)
 - [Questions](#questions)
 ## Description
-Designed to help developers save time with auto formatting readme's via node.js
+designed to help developers save time with auto formatting readme's via node.js
 ## Installation
 To get dependencies, run:
-'
 npm install
-'
 ## Usage
-not a public repository
+not a public repostiory
 ## License
 MIT
 This application is covered by the MIT license. 
 ## How to contribute
-if you would like to contribute, please email me!
+please email me directly
 ## Tests
-'
-npm test
-'
-GitHub: J35RL4R
+npm run test
+GitHub: j35rl4r
 Email: larsenj732@gmail.com
 Copyright 2020
