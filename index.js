@@ -30,11 +30,11 @@ const questions = [
         name: "license",
         choices: [
             "MIT",
-            "Unlicense",
             "Apache 2.0",
             "GNU v3",
             "BSD 3-Clause",
-            "Mozilla Public License 2.0"
+            "Mozilla Public License 2.0",
+            "Unlicense"
         ]
     },
     {
@@ -63,7 +63,7 @@ const questions = [
 ]
 const init = async () => {
     try {
-        console.log("Readme generator running. \n Please answer the following questions:")
+        console.log("Readme generator running. \n Please answer the following:")
         const answers = await promptUser();
         const fileContent = generateMd(answers);
         await writeToFile("./output/README.md", fileContent);
